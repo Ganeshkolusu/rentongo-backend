@@ -1,0 +1,43 @@
+{
+  "name": "rentongovechiles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vladmandic/human": "^3.3.6",
+    "archiver": "^7.0.1",
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.13.2",
+    "body-parser": "^2.2.0",
+    "cashfree-pg": "^6.0.6",
+    "compression": "^1.8.2",
+    "cookie-session": "^2.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.0",
+    "firebase-admin": "^13.5.0",
+    "fs-extra": "^11.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.1",
+    "multer": "^2.0.2",
+    "multer-s3": "^3.0.1",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^10.0.3",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "pdfkit": "^0.17.2",
+    "sharp": "^0.34.4",
+    "socket.io": "^4.8.1",
+    "uuid": "^8.0.0"
+  },
+  "keywords": [],
+  "description": ""
+}

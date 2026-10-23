@@ -1,0 +1,10 @@
+node_modules
+
+# secrets
+.env
+.env.*
+*firebase-adminsdk*.json
+uploads/
+
+# archives
+*.zip
