@@ -32,3 +32,14 @@ jobs:
 
       - name: Check JavaScript syntax
         run: node --check server.js
+
+      - name: Configure AWS credentials using OIDC
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::022957193063:role/GitHubRentongoDeployRole
+          aws-region: ap-south-1
+
+      - name: Verify AWS identity
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: aws sts get-caller-identity
